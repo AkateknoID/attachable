@@ -9,6 +9,6 @@ trait AttachableMany
 {
     public function attachments(): MorphMany
     {
-        return $this->morphMany(Attachment::class);
+        return $this->morphMany(Attachment::class, 'attachable');
     }
 }

@@ -9,6 +9,6 @@ trait AttachableOne
 {
     public function attachment(): MorphOne
     {
-        return $this->morphOne(Attachment::class);
+        return $this->morphOne(Attachment::class, 'attachable');
     }
 }
